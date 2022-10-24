@@ -13,7 +13,7 @@
 </div>
 <h1 align="center">View cart By ID</h1>
 <div align="center">
-    <%--@elvariable id="cartById" type="com.kudiukin.homework7.dto.CartDto"--%>
+    <%--@elvariable id="cartById" type="com.kudiukin.homework9.dto.CartDto"--%>
         <h2>Cart</h2>
         <span>ID:</span><span>${cartById.cartId}</span><br/>
         <span>Sum:</span><span>${cartById.sum}</span><br/>

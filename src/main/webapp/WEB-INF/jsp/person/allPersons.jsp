@@ -20,6 +20,8 @@
             <th>Last Name</th>
             <th>Email</th>
             <th>Phone</th>
+            <th>Username</th>
+            <th>Password</th>
         </tr>
         <c:forEach  items="${all}" var ="person">
             <tr>
@@ -28,6 +30,8 @@
                 <td>${person.lastName}</td>
                 <td>${person.email}</td>
                 <td>${person.phone}</td>
+                <td>${person.username}</td>
+                <td>${person.password}</td>
             </tr>
         </c:forEach>
     </table>

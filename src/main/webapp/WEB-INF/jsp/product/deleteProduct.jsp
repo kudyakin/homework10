@@ -28,7 +28,7 @@
 </div>
 <div align="center">
     <h2>Delete product</h2>
-    <%--@elvariable id="product" type="com.kudiukin.homework7.dto.ProductDto"--%>
+    <%--@elvariable id="product" type="com.kudiukin.homework9.dto.ProductDto"--%>
     <form:form action="delete" method="delete" modelAttribute="product">
         <form:label path="productId">ID:</form:label>
         <form:input required="required" path="productId"/><br/>

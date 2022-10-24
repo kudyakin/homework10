@@ -13,7 +13,7 @@
 </div>
 <h1 align="center">View product By ID</h1>
 <div align="center">
-    <%--@elvariable id="productById" type="com.kudiukin.homework7.dto.ProductDto"--%>
+    <%--@elvariable id="productById" type="com.kudiukin.homework9.dto.ProductDto"--%>
     <table>
         <tr>
             <td>ID: </td>

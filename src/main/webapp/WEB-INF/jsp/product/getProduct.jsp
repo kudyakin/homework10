@@ -28,7 +28,7 @@
 </div>
 <div align="center">
     <h2>View product by ID</h2>
-    <%--@elvariable id="productById" type="com.kudiukin.homework7.dto.ProductDto"--%>
+    <%--@elvariable id="productById" type="com.kudiukin.homework9.dto.ProductDto"--%>
     <form:form action="get" method="post" modelAttribute="productById">
         <form:label path="productId">ID:</form:label>
         <form:input required="required" path="productId"/><br/>
