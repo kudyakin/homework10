@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Internet Shop (Homework 9)</title>
+    <title>Internet Shop (Homework 10)</title>
     <style>
         ul {
             list-style-type: none;
@@ -38,7 +38,7 @@
     </sec:authorize>
 
         <h2>Persons</h2>
-<%--    <a href="${pageContext.request.contextPath}api/person/create">Create new person</a><br>--%>
+        <a href="${pageContext.request.contextPath}api/person/create">Create new person</a><br>
         <a href="${pageContext.request.contextPath}api/person/all">View all persons (access only for admin)</a><br>
         <a href="${pageContext.request.contextPath}api/person/get">View person by ID (access only for admin)</a><br>
         <a href="${pageContext.request.contextPath}api/person/update">Update person</a><br>

@@ -42,6 +42,12 @@
         <form:label path="phone">Phone:</form:label>
         <form:input required="required" path="phone"/><br/>
 
+        <form:label path="username">Username:</form:label>
+        <form:input required="required" path="username"/><br/>
+
+        <form:label path="password">Password:</form:label>
+        <form:input required="required" path="password"/><br/>
+
         <form:button>Register</form:button>
     </form:form>
 </div>

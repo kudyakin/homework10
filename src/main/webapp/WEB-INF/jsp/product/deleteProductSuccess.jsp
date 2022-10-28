@@ -19,7 +19,7 @@
 </div>
 <div align="center">
     <h2>Product is deleted!</h2>
-    <%--@elvariable id="product" type="com.kudiukin.homework9.dto.ProductDto"--%>
+    <%--@elvariable id="product" type="com.kudiukin.homework10.dto.ProductDto"--%>
     <span>ID:</span><span>${product.productId}</span><br/>
 </div>
 <br>

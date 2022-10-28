@@ -28,7 +28,7 @@
 </div>
 <div align="center">
     <h2>Add product to cart:</h2>
-    <%--@elvariable id="cart" type="com.kudiukin.homework9.dto.CartDto"--%>
+    <%--@elvariable id="cart" type="com.kudiukin.homework10.dto.CartDto"--%>
     <form:form action="add" method="put" modelAttribute="cart">
 
         <form:label path="cartId">Cart ID:</form:label>

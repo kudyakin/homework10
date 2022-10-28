@@ -28,7 +28,7 @@
 </div>
 <div align="center">
     <h2>Delete cart</h2>
-    <%--@elvariable id="cart" type="com.kudiukin.homework9.dto.CartDto"--%>
+    <%--@elvariable id="cart" type="com.kudiukin.homework10.dto.CartDto"--%>
     <form:form action="delete" method="delete" modelAttribute="cart">
         <form:label path="cartId">ID:</form:label>
         <form:input required="required" path="cartId"/><br/>
