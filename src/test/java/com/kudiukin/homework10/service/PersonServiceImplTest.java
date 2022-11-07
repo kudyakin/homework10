@@ -5,22 +5,31 @@ import org.junit.jupiter.api.Test;
 class PersonServiceImplTest {
 
     @Test
-    void createPerson() {
+    void testCreatePerson() {
+
     }
 
     @Test
-    void getPersonById() {
+    void testGetPersonById() {
     }
 
     @Test
-    void deletePerson() {
+    void testDeletePerson() {
     }
 
     @Test
-    void updatePerson() {
+    void testUpdatePerson() {
     }
 
     @Test
-    void getAllPersons() {
+    void testGetAllPersons() {
+    }
+
+    @Test
+    void loadUserByUsername() {
+    }
+
+    @Test
+    void getPersonByUsername() {
     }
 }

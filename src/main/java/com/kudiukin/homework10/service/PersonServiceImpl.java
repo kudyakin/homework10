@@ -16,14 +16,17 @@ import java.util.List;
 
 @Service
 public class PersonServiceImpl implements PersonService {
-    @Autowired
+
     private final PersonRepository personRepository;
 
-    @Autowired
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
+    private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
-    public PersonServiceImpl(PersonRepository personRepository) {
+    private final EmailService emailService;
+
+    public PersonServiceImpl(PersonRepository personRepository, BCryptPasswordEncoder bCryptPasswordEncoder, EmailService emailService) {
         this.personRepository = personRepository;
+        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
+        this.emailService = emailService;
     }
 
     @Override
@@ -35,12 +38,14 @@ public class PersonServiceImpl implements PersonService {
         newPerson.setPhone(phone);
         newPerson.setUsername(username);
         newPerson.setPassword(bCryptPasswordEncoder.encode(password));
+        emailService.sendRegistrationEmail(newPerson);
         if (newPerson.getUsername().contains("admin")) {
             newPerson.setRoles(Collections.singleton(new Role(2L, "ROLE_ADMIN")));
         } else {
             newPerson.setRoles(Collections.singleton(new Role(1L, "ROLE_CUSTOMER")));
         }
             return personRepository.save(newPerson);
+
     }
 
     @Override
