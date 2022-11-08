@@ -24,9 +24,9 @@ public class EmailServiceImpl implements EmailService{
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
             helper.setTo(person.getEmail());
             helper.setSubject("Registration in online shop");
-            helper.setText("<h3>Dear, " + person.getFirstName() + "!</h3><br>" +
-                    "<h3>your registration in our online shop is successfully.</h3><br>" +
-                    "<i><h4>You can start shopping via below link:</h4></i> " +
+            helper.setText("Dear, " + person.getFirstName() + "!<br>" +
+                    "Your registration in our online shop is successfully.<br>" +
+                    "You can start shopping via below link: " +
                     "<a href=\"http://localhost:8080/login\" target=\"_blank\">Log in</a>", true);
             javaMailSender.send(message);
         } catch (MessagingException e) {
