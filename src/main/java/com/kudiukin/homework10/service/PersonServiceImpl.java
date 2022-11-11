@@ -38,14 +38,14 @@ public class PersonServiceImpl implements PersonService {
         newPerson.setPhone(phone);
         newPerson.setUsername(username);
         newPerson.setPassword(bCryptPasswordEncoder.encode(password));
-        emailService.sendRegistrationEmail(newPerson);
         if (newPerson.getUsername().contains("admin")) {
             newPerson.setRoles(Collections.singleton(new Role(2L, "ROLE_ADMIN")));
         } else {
             newPerson.setRoles(Collections.singleton(new Role(1L, "ROLE_CUSTOMER")));
         }
-            return personRepository.save(newPerson);
-
+        personRepository.save(newPerson);
+        emailService.sendRegistrationEmail(newPerson);
+        return newPerson;
     }
 
     @Override
