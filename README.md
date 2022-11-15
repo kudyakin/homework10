@@ -1,6 +1,12 @@
-[![Java CI with Maven](https://github.com/kudyakin/homework9/actions/workflows/maven.yml/badge.svg)](https://github.com/kudyakin/homework9/actions/workflows/maven.yml)
+[![Java CI with Maven](https://github.com/kudyakin/homework10/actions/workflows/maven.yml/badge.svg)](https://github.com/kudyakin/homework10/actions/workflows/maven.yml)
+Online Shop
 
-# homework10
+Technologies:
+- Java 8;
+- Spring (Web, Data, Security, Email Sender);
+- JSP;
+- Docker
+- CI/CD
 
 http://localhost:8080
 
