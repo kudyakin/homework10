@@ -1,5 +1,7 @@
 FROM openjdk:8-jdk-alpine
-EXPOSE 8080:8080
-COPY ./target/homework10-1.0.war /usr/app/
-WORKDIR /usr/app/
-ENTRYPOINT ["java","-jar","homework10-1.0.war"]
+VOLUME /tmp
+ADD . /app
+WORKDIR /app
+RUN ./mvnw clean package -Dmaven.test.skip
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","target/homework10-1.0.war"]
